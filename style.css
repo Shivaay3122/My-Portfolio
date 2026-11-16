@@ -1,0 +1,57 @@
+/* 1. Design Tokens */
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #1e293b;
+    --background-color: #f8fafc;
+    --text-color: #334155;
+    --white: #ffffff;
+
+    /* Typography */
+    --font-family: Arial, sans-serif;
+    --heading-size: 2rem;
+    --subheading-size: 1.5rem;
+    --body-size: 1rem;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    /* Border radius */
+    --border-radius: 8px;
+}
+
+/* 2. Typography System */
+body {
+    font-family: var(--font-family);
+    font-size: var(--body-size);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: var(--heading-size);
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: var(--subheading-size);
+    color: var(--secondary-color);
+}
+
+p {
+    font-size: var(--body-size);
+}
+header, nav, main, footer {
+    padding: var(--spacing-medium);
+}
+
+section {
+    margin-bottom: var(--spacing-large);
+}
+
+nav a {
+    margin-right: var(--spacing-small);
+}
